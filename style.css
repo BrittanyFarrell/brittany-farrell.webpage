@@ -1,0 +1,163 @@
+/****this is the .css file referenced in the head of the index.html.*****/
+normalize.css /****sets all the style setting to 0 before the code i write is applied. this will help it look relatively similar on every platform.*****/
+* {
+  box-sizing: border-box;
+} /****the * symbol at the beginning says that this specific piece of code affects the whole document. placing it here ensures that any codes determing size of a container measures both the container and it's border*****/
+
+
+/****the text before the curly brakets determines what the code within them affects in the adjoining .html*****/
+body {
+  background-color: #CDAEB3;
+} /*****this makes the main background a dusty rose color****/
+
+header {
+  text-align: center; /****centers the header text*****/
+  height: 180px; /*****determines the height of the header container****/
+  background-image: url("../images/header-footer/hibiscus-header.png"); /***** sets an image as the header's background. In this case, a closeup of a cluster of hibiscus, my favorite flower. there is a similar link in the footer****/
+}
+
+footer {
+  
+  font-family: garamond;
+  font-size: 20px;
+  text-align: left;
+  height: 90px; /****the height of the footer is set to half the height of the header*****/
+  background-image: url("../images/header-footer/hibiscus-footer.png"); /*****The footer has it's own image since the dimensions are different. They were cropped separately to ensure they looked the way I wanted****/
+}
+
+main {
+  text-align: justify; /****justifies all the text within the main element*****/
+  width: 1205px;
+  border: 60px #CDAEB3 solid;
+} /****i used both the width and the border to add space to add some space on either side of the of this container*****/
+
+h1 {
+  /****lines 36 and 37 affect the space above and below the h1 title: Brittany farrell*****/
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: comic sans ms; /*****determines the font of the title****/
+  font-size: 90px;
+} /*****determines the size of the title****/
+
+
+
+/****affects the h2 subtitle*****/
+h2 {
+  font-family: garamond;
+  font-size: 42px;
+  margin-top: 0px;
+}
+
+
+/****affects most of the h3 headings within the main element (although the code itself is not restricted to that container)*****/
+h3 {
+  font-family: garamond;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+
+/****affects the color and font of the paragraph and list elements. I wanted them to look the same.*****/
+p, li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #342E28;
+}
+
+
+
+
+/*****this styles the horizontal ruler****/
+hr {
+  height: 1px; /****determines thickness*****/
+  width: 890px; /****determines length*****/
+
+  /****setting the bg and border colors to the same value make it look like one solid line*****/
+  background-color: #463A35;
+  border-color: #463A35;
+
+  margin-left: 50px;/*****adds space to the left of the ruler, making it appear centered.****/
+
+  border-radius: 50%; /*****with a square or rectangle container, this command would create a circle or oval shape. with the thin horizontal ruler, it creates the pointed look you see on the webpage.****/
+}
+
+
+/****determines the length, border color, and text color of bothe the header and footer containers*****/
+.style-header-footer {
+  width: 1325px;
+  border: 5px solid #463A35;
+  color: white;
+}
+
+
+/****aligns the copyright tag at the bottom of the webpage*****/
+.align-copyright {
+  margin-top: 35px;
+  margin-left: 60px;
+}
+
+
+/****this creates two columns and is currently assinged to a tag surrounding the image of brittany farrell and the "intro" section in the main container. It's how they appear side-by-side at the top of the webpage*****/
+.two-columns {
+  column-count: 2;
+}
+
+
+/****created to style the photo of brittany farrell.*****/
+.photo-styling {
+  border: 2px solid #463A35; /*****adds a solid border****/
+
+  /****determines the size of the photo*****/
+  width: 290px; 
+  height: 386px;
+
+
+  margin-left: 112px; /****aligns the photo*****/
+  border-radius: 15px;/****rounds the edges of the photo*****/
+}
+
+
+/****aligns the text in the intro section bu manipulating the space outside and within the container border.*****/
+.align-intro-text {
+  margin: 100px 0px;
+  padding: 80px 20px 50px 0px;
+}
+
+
+/****The div surrounding the last two sections was created to apply these styling attributes.*****/
+.about-contact-container-style {
+  padding: 15px 40px;/*****creates space between the text and the edges of the container****/
+  margin: 20px 12px 15px 112px;/*****creates space around the container****/
+  background-color: #CF5B76; /****determines the bg color of the container*****/
+  
+  /****the last two create a rounded border for this special container*****/
+  border-radius: 50px; 
+  border: 2px solid #463A35;
+}
+
+/****adds space below whatever contain it's applied to*****/
+.space-below {
+  margin-bottom: 18px;
+}
+
+/****adds space above whatever container its applied to*****/
+.space-above {
+  margin-top: 18px;
+}
+
+
+/*****lines 150 - 156 determine the color of the heading and paragrapghs within the "intro" section. If these rules didn't exist the text there would look the same as the "about" and "contact" sections below it.****/
+article > section > h3 {
+  color: #CF5B76;
+}
+
+article > section > p {
+  color: #463A35;
+}
+
+
+/****the remaining code determines the color setting of the links at their different phases*****/
+a:link {color:#CF5B76} /****just a normal link*****/
+a:visited {color: gray} /*****a link that's been clicked on ****/
+a:hover {color:rgb(253, 145, 170)} /****a link with a mouse hovering over it*****/
+a:active {color: white} /*****a link that's being clicked****/

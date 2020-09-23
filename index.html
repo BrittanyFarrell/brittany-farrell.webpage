@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-----This line declares the type of code used throughout this document (html)---->
+<html><!----This lines indicates what version of html is relevant----->
+  <head><!----the head contains information that is relevant, but won't be displayed on the actual webpage----->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"> 
+    <title>Brittany Farrell</title>
+
+    <!----the "meta" and "title" elements are used for searches. they affect what will appear on the screen when the website is listed in a google seach.----->
+
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!---- this links the document to the .css file that contains all the styalizing code----->
+  </head>
+  <body><!----the body element contains the main components of the webpage, the header, footer, and main containers----->
+
+    <!-----the header container contains what will be shown on the very top of the webpage. it is affected by a class that was created to affect it's style.---->
+
+    <header class="style-header-footer"> 
+        <h1>Brittany Farrell</h1> <!----a header 1 tag makes this the largest text on the screen. there is code specific to each heading element in the .css file.----->
+        <h2>Writer and Software Developer</h2>
+    </header>
+ 
+    <!---the main element contains everything between the header and footer, even other semantic element containers. ------>
+
+    <main>
+      <article class="two-columns">
+        <img src="../images/main/brittany-formal-smile.png" class="photo-styling"> <!----displays a photo of brittany farrel by referencing it's exact location in the images folder----->
+      
+        <section class="align-intro-text"> <!----this article separates groujps of text. there are 3 section containers in this document, each one has it's own h3 element.----->
+          <h3>Brittany Farrell</h3>
+
+          <p>I am a freelance writer working remotely from my home in Atlanta, Georgia. I have done a lot of work writing copy for blogs and web pages and have decided to add to my skill set by becoming a software engineer.</p> <!-----The paragraph element <p> separates grouns of text on the screen. It's the equivalent of separating a paragraph with the enter key on a word processor.----->
+
+          <p>If you'd like to know more about me, then explore my website or <a href="#contact-info">contact me.</a>.
+          <!-----above is a link that leads to the contact information at the bottom of the page----->
+        </section>
+      </article>
+
+      <div class="about-contact-container-style"> <!-----div has no semantic value, but is useful for creating containers for styling purposes. This div tag encapuslates the "About" and "Contact" sections.----->
+        <section class="space-below">
+          <h3>About Brittany</h3>
+
+          <p>I’m currently enrolled in Thinkful’s Engineering Immersion Program and working towards my goal of becoming a full stack engineer. When I was younger, I spent a fair amount of time coding simple VNGs on Ren'py. As a writer, I enjoyed piecing together their multi-ending plot lines- their intricacy only limited by my patience and imagination.</p>
+
+          <p>Other things I enjoy include:</p>
+          <!----below is the code for a list------>
+          <ol><!-----the <ol> tag indicates this is an ordered list----->
+            <li>Ceramic Art</li><!-----the <li> and </li> tags encapulate an item on the list. each item is individually wrapped by these tags.----->
+            <li>Crochet</li>
+            <li>Spoken Word Poetry</li>
+            <li>Christian Hip Hop</li>
+          </ol> <!----the list must be closed for the code to run properly------>
+
+          <p>I’ve always enjoyed creative forms of expression. Today, I love listening to Christian Hip Hop and poetry as well as working with my hands.</p>
+        </section>
+
+      <hr> <!-----this is a horizontal ruler. it creates a visible line that separates sections of a webpage. there are sytle settings set for this tag in the adjoining .css file----->
+
+        <section class="space-above">
+          <h3 id="contact-info">Contact Brittany</h3>
+
+          <p>If you would like to contact me for any reason, then try reaching me through any of the channels listed below.</p>
+        <!----below is another list------>
+          <ul><!----indicates this is a bulleted or "unordered" list.------>
+            <li><a href="https://www.linkedin.com/in/brittany-farrell-9579461b3/" target="_blank">View my LinkedIn</a></li> <!-----each bullet is linked to website relevant to the text they're wrapped around----->
+            <li><a href="https://github.com/BrittanyFarrell" target="_blank">View my GitHub</a></li> <!-----the text the links surround will be displayed on the screen and follow link specific styling indicated in the .css----->
+            <!----the target attribute ensures the links open in a new tab------>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!----the footer is displayed at the very bottom of a webpage. it contains copyright information among other things. This webpage just places copyright info here------>
+
+    <footer class="style-header-footer">
+      <div class="align-copyright">
+        &copy; Brittany Farrell <!-----the &copy mark creates the copyright symbol----->
+      </div>
+    </footer>
+  </body> <!-----this marks the end of the body element----->
+</html>
