@@ -13,7 +13,7 @@ body {
 header {
   text-align: center; /****centers the header text*****/
   height: 180px; /*****determines the height of the header container****/
-  background-image: url("../images/header-footer/hibiscus-header.png"); /***** sets an image as the header's background. In this case, a closeup of a cluster of hibiscus, my favorite flower. there is a similar link in the footer****/
+  background-image: url("../../images/header-footer/hibiscus-header.png"); /***** sets an image as the header's background. In this case, a closeup of a cluster of hibiscus, my favorite flower. there is a similar link in the footer****/
 }
 
 footer {
@@ -22,7 +22,7 @@ footer {
   font-size: 20px;
   text-align: left;
   height: 90px; /****the height of the footer is set to half the height of the header*****/
-  background-image: url("../images/header-footer/hibiscus-footer.png"); /*****The footer has it's own image since the dimensions are different. They were cropped separately to ensure they looked the way I wanted****/
+  background-image: url("../../images/header-footer/hibiscus-footer.png"); /*****The footer has it's own image since the dimensions are different. They were cropped separately to ensure they looked the way I wanted****/
 }
 
 main {
