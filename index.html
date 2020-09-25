@@ -1,80 +1,80 @@
-<!DOCTYPE html> <!-----This line declares the type of code used throughout this document (html)---->
-<html lang="fr"><!----This lines indicates what version of html is relevant----->
-  <head><!----the head contains information that is relevant, but won't be displayed on the actual webpage----->
+<!DOCTYPE html> <!--This line declares the type of code used throughout this document (html)-->
+<html lang="fr"><!-- This lines indicates what version of html is relevant -->
+  <head><!-- the head contains information that is relevant, but won't be displayed on the actual webpage -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width"> 
     <meta name="owner" content="Brittany Farrell">
     <title>Brittany Farrell</title>
 
-    <!----the "meta" and "title" elements are used for searches. they affect what will appear on the screen when the website is listed in a google seach.----->
+    <!-- the "meta" and "title" elements are used for searches. they affect what will appear on the screen when the website is listed in a google seach. -->
 
-    <link href="style.css" rel="stylesheet" type="text/css" /> <!---- this links the document to the .css file that contains all the styalizing code----->
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!--  this links the document to the .css file that contains all the styalizing code -->
   </head>
-  <body><!----the body element contains the main components of the webpage, the header, footer, and main containers----->
+  <body><!-- the body element contains the main components of the webpage, the header, footer, and main containers -->
 
-    <!-----the header container contains what will be shown on the very top of the webpage. it is affected by a class that was created to affect it's style.---->
+    <!-- the header container contains what will be shown on the very top of the webpage. it is affected by a class that was created to affect it's style. -->
 
     <header class="style-header-footer"> 
-        <h1>Brittany Farrell</h1> <!----a header 1 tag makes this the largest text on the screen. there is code specific to each heading element in the .css file.----->
+        <h1>Brittany Farrell</h1> <!-- a header 1 tag makes this the largest text on the screen. there is code specific to each heading element in the .css file.-->
         <h2>Writer and Software Developer</h2>
     </header>
  
-    <!---the main element contains everything between the header and footer, even other semantic element containers. ------>
+    <!--the main element contains everything between the header and footer, even other semantic element containers. -->
 
     <main>
-      <div class="two-columns"><!-----this div container was created to style the ayout of the content within it. The class affecting it creates 2 columns. So, the image and the text can be displayed side-by-side. ----->
-        <img src="images/main/brittany-formal-smile.png" class="photo-styling" alt="image unavailable"> <!----displays a photo of brittany by referencing it's exact location in the images folder----->
+      <div class="two-columns"><!--this div container was created to style the ayout of the content within it. The class affecting it creates 2 columns. So, the image and the text can be displayed side-by-side. -->
+        <img src="images/main/brittany-formal-smile.png" class="photo-styling" alt="image unavailable"> <!--displays a photo of brittany by referencing it's exact location in the images folder-->
       
-        <article class="align-intro-text"> <!----this article separates groujps of text. there is 1 article and 2 section containers in this document, each one has it's own h3 heading element.----->
+        <article class="align-intro-text"> <!--this article separates groujps of text. there is 1 article and 2 section containers in this document, each one has it's own h3 heading element.-->
           <h3>Brittany Farrell</h3>
 
-          <p>I am a freelance writer working remotely from my home in Atlanta, Georgia. I have done a lot of work writing copy for blogs and web pages and have decided to add to my skill set by becoming a software engineer.</p> <!-----The paragraph element <p> separates grouns of text on the screen. It's the equivalent of separating a paragraph with the enter key on a word processor.----->
+          <p>I am a freelance writer working remotely from my home in Atlanta, Georgia. I have done a lot of work writing copy for blogs and web pages and have decided to add to my skill set by becoming a software engineer.</p> <!--The paragraph element <p> separates grouns of text on the screen. It's the equivalent of separating a paragraph with the enter key on a word processor.-->
 
           <p>If you'd like to know more about me, then explore my website or <a href="#contact-info">contact me.</a>.
-          <!-----above is a link that leads to the contact information at the bottom of the page----->
+          <!--above is a link that leads to the contact information at the bottom of the page-->
         </article>
       </div>
 
-      <div class="about-contact-container-style"> <!-----div has no semantic value, but is useful for creating containers for styling purposes. This div tag encapuslates the "About" and "Contact" sections.----->
+      <div class="about-contact-container-style"> <!--div has no semantic value, but is useful for creating containers for styling purposes. This div tag encapuslates the "About" and "Contact" sections.-->
         <section class="space-below">
           <h3>About Brittany</h3>
 
           <p>I’m currently enrolled in Thinkful’s Engineering Immersion Program and working towards my goal of becoming a full stack engineer. I'm in love with the satisfaction that comes with watching my code work the way it was intended to and I look forward to joining a capable team someday.</p>
             
           <p>When I was younger, I spent a fair amount of time coding simple VNGs on Ren'py. Other things I enjoy include:</p>
-          <!----below is the code for a list------>
-          <ol><!-----the <ol> tag indicates this is an ordered list----->
-            <li>Ceramic Art</li><!-----the <li> and </li> tags encapulate an item on the list. each item is individually wrapped by these tags.----->
+          <!--below is the code for a list-->
+          <ol><!--the <ol> tag indicates this is an ordered list-->
+            <li>Ceramic Art</li><!--the <li> and </li> tags encapulate an item on the list. each item is individually wrapped by these tags.-->
             <li>Crochet</li>
             <li>Spoken Word Poetry</li>
             <li>Christian Hip Hop</li>
-          </ol> <!----the list must be closed for the code to run properly------>
+          </ol> <!--the list must be closed for the code to run properly-->
 
           <p>If you're looking for a new developer to help with a project or join your staff, then feel free to contact me. I'm excited to see all the things I will create with my future coworkers.</p>
         </section>
 
-      <hr> <!-----this is a horizontal ruler. it creates a visible line that separates sections of a webpage. there are sytle settings set for this tag in the adjoining .css file----->
+      <hr> <!--this is a horizontal ruler. it creates a visible line that separates sections of a webpage. there are sytle settings set for this tag in the adjoining .css file-->
 
         <section class="space-above">
           <h3 id="contact-info">Contact Brittany</h3>
 
           <p>If you would like to contact me for any reason, then try reaching me through any of the channels listed below.</p>
-        <!----below is another list------>
-          <ul><!----indicates this is a bulleted or "unordered" list.------>
-            <li><a href="https://www.linkedin.com/in/brittany-farrell-9579461b3/" target="_blank">View my LinkedIn</a></li> <!-----each bullet is linked to website relevant to the text they're wrapped around----->
-            <li><a href="https://github.com/BrittanyFarrell" target="_blank">View my GitHub</a></li> <!-----the text the links surround will be displayed on the screen and follow link specific styling indicated in the .css----->
-            <!----the target attribute ensures the links open in a new tab------>
+        <!--below is another list-->
+          <ul><!--indicates this is a bulleted or "unordered" list.-->
+            <li><a href="https://www.linkedin.com/in/brittany-farrell-9579461b3/" target="_blank">View my LinkedIn</a></li> <!--each bullet is linked to website relevant to the text they're wrapped around-->
+            <li><a href="https://github.com/BrittanyFarrell" target="_blank">View my GitHub</a></li> <!--the text the links surround will be displayed on the screen and follow link specific styling indicated in the .css-->
+            <!--the target attribute ensures the links open in a new tab-->
           </ul>
         </section>
       </div>
     </main>
 
-    <!----the footer is displayed at the very bottom of a webpage. it contains copyright information among other things. This webpage just places copyright info here------>
+    <!--the footer is displayed at the very bottom of a webpage. it contains copyright information among other things. This webpage just places copyright info here-->
 
     <footer class="style-header-footer">
       <div class="align-copyright">
-        &copy; Brittany Farrell <!-----the &copy mark creates the copyright symbol----->
+        &copy; Brittany Farrell <!--the &copy mark creates the copyright symbol-->
       </div>
     </footer>
-  </body> <!-----this marks the end of the body element----->
+  </body> <!--this marks the end of the body element-->
 </html>
