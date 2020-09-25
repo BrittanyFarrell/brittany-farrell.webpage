@@ -123,12 +123,23 @@ hr {
   padding: 80px 20px 50px 0px;
 }
 
+/****the following code determines the color setting of the links at their different phases*****/
+a:link {color:#CF5B76} /****just a normal link*****/
+a:visited {color: gray} /*****a link that's been clicked on ****/
+a:hover {color:rgb(253, 145, 170)} /****a link with a mouse hovering over it*****/
+a:active {color: white} /*****a link that's being clicked****/
+
 
 /****The div surrounding the last two sections was created to apply these styling attributes.*****/
 .about-contact-container-style {
   padding: 15px 40px;/*****creates space between the text and the edges of the container****/
   margin: 20px 12px 15px 112px;/*****creates space around the container****/
   background-color: #CF5B76; /****determines the bg color of the container*****/
+  
+   a:link {color:rgb(248, 158, 158))} /****just a normal link*****/
+   a:visited {color: rgb(194, 192, 192)} /*****a link that's been clicked on ****/
+   a:hover {color:rgb(250, 200, 200)} /****a link with a mouse hovering over it*****/
+   a:active {color: white} /*****a link that's being clicked****/
   
   /****the last two create a rounded border for this special container*****/
   border-radius: 50px; 
@@ -154,10 +165,3 @@ article > section > h3 {
 article > section > p {
   color: #463A35;
 }
-
-
-/****the remaining code determines the color setting of the links at their different phases*****/
-a:link {color:#CF5B76} /****just a normal link*****/
-a:visited {color: gray} /*****a link that's been clicked on ****/
-a:hover {color:rgb(253, 145, 170)} /****a link with a mouse hovering over it*****/
-a:active {color: white} /*****a link that's being clicked****/
